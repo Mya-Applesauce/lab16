@@ -28,6 +28,11 @@ try:
     fig, ax = plt.subplots()
     ax.plot(rates, color='red')
 
+    ax.set_title("Ohio Unemployment (by Month): 1976 - 2022", fontsize=25)
+    ax.set_xlabel("Date", fontsize=16)
+    ax.set_ylabel("Unemployment Rate", fontsize=16)
+    ax.tick_params(labelsize=16)
+
     plt.show()
 except Exception as err:
     print("didn't work :[")
